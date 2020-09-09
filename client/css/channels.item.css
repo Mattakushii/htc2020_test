@@ -1,0 +1,51 @@
+.channels_item {
+    color: #333;
+    padding: 20px 0;
+    width: 100%;
+    background: #F2F2F2;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.broadcast_current {
+    color: #E5261E; 
+}
+
+.channel_logo {
+    width: 400px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shedule_title {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 17px;
+    font-weight: 500;
+}
+
+.shedule_list_broadcast {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 12px;
+    font-size: 16px;
+    line-height: 19px;
+    list-style: none;
+}
+
+.broadcast_name {
+    margin-left: 16px;
+    height: 19px;
+    width: 630px;
+    overflow: hidden;
+}
+
+.broadcast_time {
+    width: 45px;
+    height: 19px;
+    overflow: hidden;
+}

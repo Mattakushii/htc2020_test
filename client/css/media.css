@@ -1,0 +1,209 @@
+@media only screen and (max-width : 1194px) {
+    .container {
+        width: 720px;
+    }
+
+    .header {
+        justify-content: space-around;
+        height: 130px;
+    }
+
+    .header_block__logo {
+        flex: auto;
+    }
+ 
+    .header_auth {
+        order: 2;
+        margin: 0;
+        flex: auto;
+    }
+
+    .header_form {
+        flex: auto;
+        order: 3;
+    }
+    
+    .input_search {
+        margin-left: 170px;
+    } 
+
+    .tab_changer {
+        margin-top: 32px;   
+    }
+
+    .newest_movies_item {
+        margin-bottom: 20px;    
+    }
+
+    .genres_list_item {
+        margin-bottom: 20px;
+    }
+
+    .footer_container {
+        width: 720px;
+    }
+
+    .shedule_title {
+        width: 390px;
+        font-size: 22px;
+        height: 24px;
+        overflow: hidden;
+    }
+
+    .page_tv_shedule {
+        width: 720px;
+    }
+
+    .channel_logo {
+        width: 200px;
+    }
+
+    .broadcast_name {
+        font-size: 14px;
+        width: 390px;
+    }
+
+    .footer {
+        height: 130px;
+    }
+
+    .footer_address {
+        height: 40px;
+    }
+
+
+}
+
+@media only screen and (max-width : 768px) {
+    .container {
+        width: 320px;
+    }
+
+    .header {
+        flex-flow: column nowrap;
+        height: 230px;
+    }
+    
+    .header_logo {
+        margin-top: 25px;
+    }
+
+    .header_auth {
+        height: 35px;
+        align-items: center;
+    }
+
+    .header_auth__authorized {
+        justify-content: space-between;
+    }
+
+    .input_search {
+        width: 210px;
+        margin-left: 25px;
+    }
+
+    .header_login_button {
+        margin: auto;
+    }
+
+    .tab_changer {
+        margin: 40px;
+        margin-bottom: 60px;
+    }
+
+    .tab_changer_item {
+        font-size: 24px;
+    }
+
+    .newest_movies_item {
+        width: 140px;
+        height: 270px;
+        margin-bottom: 0;
+    }
+
+    .movies_item_tile {
+        height: 185px;
+    }
+
+    .item_tile_overlay {
+        display: none;
+    }
+
+    .movies_item_title {
+        font-size: 18px;
+        height: 50px;
+        overflow: hidden;
+    }
+
+    .genres_list_item {
+        width: 140px;
+        height: 104px;
+    }
+
+    .genres_list_item_icon {
+        width: 24px;
+        margin-top: 35px;
+    }
+
+    .genres_list_item_name {
+        margin-top: 16px;
+        font-size: 14px;
+    }
+
+    .shedule_title {
+        font-size: 18px;
+    }
+
+    .page_tv_shedule {
+        width: 320px;
+    }
+
+    .channel_logo {
+        display: none;
+    }
+
+    .channel_shedule {
+        width: 250px;
+        margin: 0 auto;
+    }
+
+    .shedule_list_broadcast {
+        width: 250px;
+        overflow: hidden;
+        height: 17px;
+    }
+
+    .broadcast_time {
+        font-size: 14px;
+        width: 40px;
+    }
+
+    .broadcast_name {
+        margin-left: 10px;
+        font-size: 14px;
+        width: 170px;
+    }
+
+    
+    .footer {
+        height: 145px;
+    }
+
+    .footer_container {
+        width: 320px;
+    }
+
+    .footer_address {
+        height: 55px;
+    }
+
+    .footer_info {
+        font-size: 12px;
+        overflow: hidden
+    }
+
+    .genres_list_item_name {
+        width: 90px;
+    }
+
+}

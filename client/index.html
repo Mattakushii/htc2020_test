@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <title>HtcTube</title>
+</head>
+<body>
+    <div class="wrapper">   
+        <header class="header container">
+            <div class="header_block__logo">
+                <img class="header_logo" src="img/logo.png" alt="HtcTube">
+            </div>
+            <form class="header_form" method="get">
+                <input class="header_form_input input_search" name="search" placeholder="Поиск..." type="search">
+                <button class="header_button__light search_button" type="submit">Найти</button>
+            </form>
+            <div class="header_auth">
+                <button id="login_button" class="button__login header_button">Войти</button>
+                <div class="header_auth__authorized">
+                    <div id="user_name" class="authorized_name user_profile isVisible"></div>
+                    <input type="text" id="user_name_change" class="header_form_input input_name user_profile isVisible">
+                    <button id="logout_button" class="header_button__light logout_button user_profile isVisible">Выйти</button>
+                </div>
+            </div> 
+        </header>
+        <ul class="tab_changer container">
+            <li class="tab_changer_item">Фильмы</li>
+            <li class="tab_changer_item">Телеканалы</li>
+        </ul>
+        <main class="main_content container ">
+            <div class="page_films pages">
+                <section class="newest">
+                    <h2 class="newest_title_text">Новинки</h2>
+                    <div class="newest_movies">
+                        <div class="newest_movies_item">
+                            <div class="movies_item_tile">
+                                <img class="item_tile_img" src="img/cat.jpg" alt="news">
+                                <span class="item_tile_overlay">Фильм повествует о череде событий, произошедших в Голливуде в 1969 году, на закате его «золотого века». Известный актер Рик Далтон и его дублер Клифф Бут пытаются найти свое место в стремительно меняющемся мире киноиндустрии</span>
+                            </div>
+                            <h3 class="movies_item_title">Мульт в кино. Выпуск №103. Некогда грустить!</h3>
+                        </div> 
+                        <div class="newest_movies_item">
+                            <div class="movies_item_tile">
+                                <img class="item_tile_img" src="img/batamn.png" alt="news">
+                                <span class="item_tile_overlay">Фильм повествует о череде событий, произошедших в Голливуде в 1969 году, на закате его «золотого века». Известный актер Рик Далтон и его дублер Клифф Бут пытаются найти свое место в стремительно меняющемся мире киноиндустрии.</span>
+                            </div>
+                            <h3 class="movies_item_title">Новый Бэтмен</h3>
+                        </div>
+                        <div class="newest_movies_item">
+                            <div class="movies_item_tile">
+                                <img class="item_tile_img" src="img/blinders.jpg" alt="news">
+                                <span class="item_tile_overlay">Фильм повествует о череде событий, произошедших в Голливуде в 1969 году, на закате его «золотого века». Известный актер Рик Далтон и его дублер Клифф Бут пытаются найти свое место в стремительно меняющемся мире киноиндустрии.</span>
+                            </div>
+                            <h3 class="movies_item_title">Однажды... в Голливуде</h3>
+                        </div>
+                        <div class="newest_movies_item">
+                            <div class="movies_item_tile">
+                                <img class="item_tile_img" src="img/girl.jpg" alt="news">
+                                <span class="item_tile_overlay">Фильм повествует о череде событий, произошедших в Голливуде в 1969 году, на закате его «золотого века». Известный актер Рик Далтон и его дублер Клифф Бут пытаются найти свое место в стремительно меняющемся мире киноиндустрии.</span>
+                            </div>
+                            <h3 class="movies_item_title">Стриптизёрши</h3>
+                        </div>
+                    </div>
+                </section>
+                <section class="genres">
+                    <h2 class="genres_title">Жанры</h2>
+                    <div class="genres_list">
+                        <div class="genres_list_item list_item_comedy">
+                            <img src="img/comedy.png" alt="comedy" class="genres_list_item_icon">
+                            <div class="genres_list_item_name">Комедии</div>
+                        </div>
+                        <div class="genres_list_item list_item_drama">
+                            <img src="img/drama.png" alt="drama" class="genres_list_item_icon">
+                            <div class="genres_list_item_name">Драмы</div>
+                        </div>
+                        <div class="genres_list_item list_item_fantasy">
+                            <img src="img/fantasy.png" alt="fantasy" class="genres_list_item_icon">
+                            <div class="genres_list_item_name">Фантастика</div>
+                        </div>
+                        <div class="genres_list_item list_item_horror">
+                            <img src="img/horror.png" alt="horror" class="genres_list_item_icon">
+                            <div class="genres_list_item_name">Ужасы</div>
+                        </div>
+                    </div>
+                </section>
+            </div>  
+            <div class="page_tv_shedule pages">
+                <div class="channels_container">
+                    <div class="channels_item">
+                        <div class="channel_logo">
+                            <img src="img/First.png" alt="Первый канал" class="logo_ico">
+                        </div>
+                        <div class="channel_shedule">
+                            <h2 class="shedule_title">Первый канал</h2>
+                            <ul class="shedule_list">
+                                <li class="shedule_list_broadcast broadcast_current">
+                                    <div class="broadcast_time">00:00</div>
+                                    <div class="broadcast_name">Новости (с субтитрами)</div>
+                                </li>
+                                <li class="shedule_list_broadcast">
+                                    <div class="broadcast_time">14:00</div>
+                                    <div class="broadcast_name">Давай поженимся</div>
+                                </li>
+                                <li class="shedule_list_broadcast">
+                                    <div class="broadcast_time">15:00</div>
+                                    <div class="broadcast_name">Другие новости</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="channels_item">
+                        <div class="channel_logo">
+                            <img src="img/2x2.png" alt="2x2" class="logo_ico">
+                        </div>
+                        <div class="channel_shedule">
+                            <h2 class="shedule_title">2x2</h2>
+                            <ul class="shedule_list">
+                                <li class="shedule_list_broadcast broadcast_current">
+                                    <div class="broadcast_time">13:00</div>
+                                    <div class="broadcast_name">МУЛЬТ ТВ. Сезон 4, 7 серия</div>
+                                </li>
+                                <li class="shedule_list_broadcast">
+                                    <div class="broadcast_time">14:00</div>
+                                    <div class="broadcast_name">ПОДОЗРИТЕЛЬНАЯ СОВА. Сезон 7, 7 серия</div>
+                                </li>
+                                <li class="shedule_list_broadcast">
+                                    <div class="broadcast_time">15:00</div>
+                                    <div class="broadcast_name">БУРДАШЕВ. Сезон 1, 20 серия</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="channels_item">
+                        <div class="channel_logo">
+                            <img src="img/First.png" alt="Первый канал" class="logo_ico">
+                        </div>
+                        <div class="channel_shedule">
+                            <h2 class="shedule_title">Первый канал</h2>
+                            <ul class="shedule_list">
+                                <li class="shedule_list_broadcast broadcast_current">
+                                    <div class="broadcast_time">00:00</div>
+                                    <div class="broadcast_name">Новости (с субтитрами)</div>
+                                </li>
+                                <li class="shedule_list_broadcast">
+                                    <div class="broadcast_time">14:00</div>
+                                    <div class="broadcast_name">Давай поженимся</div>
+                                </li>
+                                <li class="shedule_list_broadcast">
+                                    <div class="broadcast_time">15:00</div>
+                                    <div class="broadcast_name">Другие новости</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="channels_item">
+                        <div class="channel_logo">
+                            <img src="img/RBK.png" alt="РБК" class="logo_ico">
+                        </div>
+                        <div class="channel_shedule">
+                            <h2 class="shedule_title">РБК</h2>
+                            <ul class="shedule_list">
+                                <li class="shedule_list_broadcast broadcast_current">
+                                    <div class="broadcast_time">13:00</div>
+                                    <div class="broadcast_name">ДЕНЬ. Горючая смесь: как бороться с суррогатом на АЗС</div>
+                                </li>
+                                <li class="shedule_list_broadcast">
+                                    <div class="broadcast_time">14:00</div>
+                                    <div class="broadcast_name">ДЕНЬ. Главные темы</div>
+                                </li>
+                                <li class="shedule_list_broadcast">
+                                    <div class="broadcast_time">15:00</div>
+                                    <div class="broadcast_name">Главные новости</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="channels_item">
+                        <div class="channel_logo">
+                            <img src="img/Amedia.png" alt="Amedia Primium" class="logo_ico">
+                        </div>
+                        <div class="channel_shedule">
+                            <h2 class="shedule_title">AMEDIA PREMIUM</h2>
+                            <ul class="shedule_list">
+                                <li class="shedule_list_broadcast broadcast_current">
+                                    <div class="broadcast_time">13:00</div>
+                                    <div class="broadcast_name">Клиент всегда мёртв</div>
+                                </li>
+                                <li class="shedule_list_broadcast">
+                                    <div class="broadcast_time">14:00</div>
+                                    <div class="broadcast_name">Голодные игры: Сойка-пересмешница. Часть I</div>
+                                </li>
+                                <li class="shedule_list_broadcast">
+                                    <div class="broadcast_time">15:00</div>
+                                    <div class="broadcast_name">Секс в большом городе</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer_container">
+                <img src="img/Vector.png" alt="" class="footer_img">
+                <div class="footer_info">
+                    <span class="footer_address">426057, Россия, Удмуртская Республика, г. Ижевск, ул. Карла Маркса, 246 (ДК «Металлург»)</span>
+                    <span class="footer_phone">+7 (3412) 93-88-61, 43-29-29</span>
+                    <address class="footer_link">
+                        <a href="http://www.htc-cs.ru">htc-cs.ru</a>
+                    </address>
+                </div>
+            </div>
+        </footer>
+        <!-- popup screen -->
+        <div id="popup" class="auth_screen">
+            <div id="close" class="close_area"></div>
+            <form name="auth" id="auth" class="auth_form">
+                <h2 class="auth_header">Вход</h2>
+                <input name="login" class="auth_login header_form_input" type="text" placeholder="Логин">
+                <input name="password" class="auth_password header_form_input" type="password" placeholder="Пароль">
+                <div class="auth_checkbox">
+                    <input id='check' class="checkbox_input" type="checkbox">
+                    <label class="checkbox_label" for="check">Запомнить</label>
+                </div>
+                <span id="error_message" class="auth_error_message"></span>
+                <button id="auth_button" class="auth_submit button__login" type="submit">Войти</button>   
+            </form>
+        </div>
+    </div>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src="js/TabsModule.js"></script>
+    <script src="js/AuthorizationModule.js"></script>
+
+    <script src="js/NameChangerModule.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery.mCustomScrollbar.js"></script>
+    <script>
+        (function($){
+            $(window).on("load",function(){
+                $(".channels_container").mCustomScrollbar({
+                    theme: "dark"
+                });
+            });
+        })(jQuery);
+    </script>
+</body>
+</html>

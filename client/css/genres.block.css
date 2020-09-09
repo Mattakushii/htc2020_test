@@ -1,0 +1,110 @@
+.genres {
+    margin-top: 12px;
+}
+
+.genres_title {
+    height: 28px;
+    overflow: hidden;
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.genres_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.genres_list_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 280px;
+    height: 208px;
+    border-radius: 6px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.list_item_comedy {
+    background: linear-gradient(136.27deg, rgba(242, 201, 76, 0.8) 8.44%, rgba(242, 154, 74, 0.8) 91.36%);
+}
+
+
+.list_item_drama {
+    background: linear-gradient(136.27deg, rgba(242, 153, 74, 0.8) 8.44%, rgba(235, 87, 87, 0.8) 91.36%);
+}
+
+.list_item_fantasy {
+    background: linear-gradient(136.27deg, rgba(86, 204, 242, 0.8) 8.44%, rgba(47, 128, 237, 0.8) 91.36%);
+}
+
+.list_item_horror {
+    background: linear-gradient(136.27deg, rgba(130, 130, 130, 0.8) 8.44%, rgba(51, 51, 51, 0.8) 91.36%);
+}
+
+.list_item_comedy::after, 
+.list_item_drama::after,
+.list_item_fantasy::after,
+.list_item_horror::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: opacity 0.3s linear;
+    opacity: 0;
+}
+
+.list_item_comedy:hover::after, 
+.list_item_drama:hover::after, 
+.list_item_fantasy:hover::after, 
+.list_item_horror:hover::after {
+    opacity: 1;
+}
+
+
+.list_item_comedy::after {
+    background: linear-gradient(136.27deg, #F2C94C 8.44%, #F29A4A 91.36%);
+    box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.15);
+}
+
+
+.list_item_drama::after {
+    background: linear-gradient(136.27deg, #F2994A 8.44%, #EB5757 91.36%);
+    box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.15);
+}
+
+.list_item_fantasy::after {
+    background: linear-gradient(136.27deg, #56CCF2 8.44%, #2F80ED 91.36%);
+    box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.15);
+}
+
+.list_item_horror::after {
+    background: linear-gradient(136.27deg, #828282 8.44%, #333333 91.36%);
+    box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.15);
+}
+
+.genres_list_item_icon {
+    width: 48px;
+    margin-top: 80px;
+}
+
+.genres_list_item_name {
+    height: 24px;
+    width: 200px;
+    overflow: hidden;
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 32px;
+}

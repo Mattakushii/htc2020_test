@@ -1,0 +1,52 @@
+.footer {
+    height: 120px;
+    background: #F2F2F2;
+    display: flex;
+    justify-content: center;
+}
+
+.footer_container {
+    width: 1180px;
+    display: flex;
+    align-self: flex-start;
+    margin-top: 22px;
+}
+
+.footer_img {
+    height: 64px;
+    width: 32px;
+    margin-top: 6px;
+}
+
+.footer_info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.004em;
+}
+
+.footer_address {
+    height: 19px;
+    overflow: hidden;
+}
+
+.footer_phone {
+    margin-top: 6px;
+    height: 19px;
+    overflow: hidden;
+}
+
+.footer_link {
+    margin-top: 10px;
+    letter-spacing: 0.02em;
+}
+
+.footer_link > a {
+    text-decoration: none;
+    font-style: normal;
+    color: #1F4766;
+    height: 19px;
+    overflow: hidden;
+}

@@ -1,0 +1,22 @@
+/* base flex grid 1180px */
+body {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 1180px;
+    align-self: center;
+}
+
+.main_content {
+    margin-bottom: 72px;
+}
+

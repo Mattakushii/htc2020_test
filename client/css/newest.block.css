@@ -1,0 +1,69 @@
+.newest_title_text {
+    font-weight: 500;
+    height: 32px;
+    overflow: hidden;
+}
+
+.newest_title_text:before {
+    content: "\1F525";
+    margin-right: 3px;
+}
+
+.newest_movies {
+    margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.newest_movies_item {
+    width: 280px;
+    height: 434px;
+    margin-bottom: 20px;
+}
+
+.movies_item_tile {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 370px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+.item_tile_img {
+    position: absolute;
+    height: 100%;
+    width: auto;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.item_tile_overlay {
+    position: absolute;
+    padding: 16px;
+    background-color: rgba(51,51,51, 0.8);
+    opacity: 0;
+    height: 91%;
+    color: #f2f2f2;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    transition: 0.4s;
+}
+
+.item_tile_overlay:hover {
+    opacity: 1;
+    overflow: hidden;
+}
+
+.movies_item_title {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    height: 48px;
+    overflow: hidden;
+    letter-spacing: -0.004em;
+}

@@ -1,0 +1,25 @@
+.tab_changer {
+    margin-top: 18px;
+    margin-bottom: 28px;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.tab_changer_item {
+    margin-left: 24px;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+    padding-bottom: 7px;
+    cursor: pointer;
+}
+
+.tab_changer_item:first-child {
+    margin-left: 0;
+}
+
+.tab_changer_item_active {
+    color: #E5261E;
+    border-bottom: 2px solid #E5261E;
+}

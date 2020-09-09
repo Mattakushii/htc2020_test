@@ -1,0 +1,14 @@
+{
+  "name": "htc-2020",
+  "version": "1.0.0",
+  "description": "htc test",
+  "main": "app.js",
+  "scripts": {
+    "dev": "node app.js"
+  },
+  "author": "Vakhtel Maksim",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

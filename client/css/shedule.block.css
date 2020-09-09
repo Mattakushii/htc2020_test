@@ -1,0 +1,9 @@
+.channels_container {
+    max-height: 696px;
+    display: flex;
+    flex-direction: column;
+}
+
+.page_tv_shedule {
+    width: 1194px;
+}
